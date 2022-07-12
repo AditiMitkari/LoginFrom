@@ -1,0 +1,25 @@
+
+  
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand">State</span>
+      <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" ngbDropdown>
+            <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
+
+            </a>
+                <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Maharashtra</a>
+              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Gujarat</a>
+              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Uttar Pradesh</a>
+            </div>
+          </li>
+        
+  
+  
+       
